@@ -1,0 +1,45 @@
+{
+  "name": "coalgov-ai",
+  "version": "1.0.0",
+  "description": "AI-Powered Digital Governance & Compliance Monitoring Platform for Indian Coal Mines",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node scripts/seed.js",
+    "reset-demo": "node scripts/resetDemo.js",
+    "smoke": "node scripts/smokeTest.js",
+    "smoke:workflow": "node scripts/smokeTest.js --workflow"
+  },
+  "keywords": [
+    "coal",
+    "governance",
+    "compliance",
+    "mining",
+    "ai",
+    "groq"
+  ],
+  "author": "Team Elysium",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "connect-redis": "^7.1.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "express-session": "^1.18.0",
+    "express-validator": "^7.2.0",
+    "groq-sdk": "^0.7.0",
+    "helmet": "^7.1.0",
+    "ioredis": "^5.4.1",
+    "mongodb-memory-server": "^11.2.0",
+    "mongoose": "^8.6.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^10.0.0"
+  }
+}
